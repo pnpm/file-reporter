@@ -22,7 +22,8 @@ export default function (streamParser: Object) {
       return
     }
 
-    const yamlLogs = YAML.stringify(logs)
+    const prettyLogs = getPrettyLogs()
+    const yamlLogs = YAML.stringify(prettyLogs)
     fs.writeFileSync(LOG_FILENAME, yamlLogs, 'UTF8')
   })
 
@@ -54,6 +55,7 @@ export default function (streamParser: Object) {
       }
       return logMsg
     }
+    if (Object.keys(obj).length === 1 && obj['message']) return obj['message']
     return obj.toString()
   }
 }
