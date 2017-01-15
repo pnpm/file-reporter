@@ -1,0 +1,5 @@
+---
+  0 info pnpm: "foo"
+  1 warn pnpm: 
+    foo: 1
+    bar: 2

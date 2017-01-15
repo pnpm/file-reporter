@@ -30,10 +30,9 @@ export default function (streamParser: Object) {
   function getPrettyLogs () {
     const prettyLogs = {}
     logs.forEach((logObj, i) => {
-      const key = `${i} ${logObj['time']} ${logObj['level']} ${logObj['name']}`
+      const key = `${i} ${logObj['level']} ${logObj['name']}`
       const msgobj = getMessageObj(logObj)
-      const rest = stringify(msgobj)
-      prettyLogs[key] = rest.length === 1 ? rest[0] : rest
+      prettyLogs[key] = prettify(msgobj)
     })
     return prettyLogs
   }
@@ -47,7 +46,7 @@ export default function (streamParser: Object) {
     return msgobj
   }
 
-  function stringify (obj: Object): string {
+  function prettify (obj: Object): string | Object {
     if (obj instanceof Error) {
       let logMsg = obj.toString()
       if (obj.stack) {
@@ -56,7 +55,7 @@ export default function (streamParser: Object) {
       return logMsg
     }
     if (Object.keys(obj).length === 1 && obj['message']) return obj['message']
-    return obj.toString()
+    return obj
   }
 }
 
