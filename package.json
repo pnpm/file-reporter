@@ -27,7 +27,9 @@
   },
   "homepage": "https://github.com/pnpm/pnpm-file-reporter#readme",
   "dependencies": {
+    "@types/graceful-fs": "^2.0.29",
     "@types/node": "^7.0.0",
+    "graceful-fs": "^4.1.11",
     "json2yaml": "^1.1.0"
   },
   "devDependencies": {

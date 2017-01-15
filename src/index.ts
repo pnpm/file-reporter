@@ -1,4 +1,4 @@
-import fs = require('fs')
+import fs = require('graceful-fs')
 import YAML = require('json2yaml')
 
 const slice = Array.prototype.slice
