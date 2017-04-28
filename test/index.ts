@@ -3,7 +3,7 @@ import ndjson = require('ndjson')
 import child = require('child_process')
 import path = require('path')
 import fs = require('fs')
-import exists = require('exists-file')
+import exists = require('path-exists')
 
 const fixtures = path.join(__dirname, 'fixture')
 

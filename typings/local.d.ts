@@ -8,7 +8,7 @@ declare module 'ndjson' {
   export = anything;
 }
 
-declare module 'exists-file' {
+declare module 'path-exists' {
   const anything: any;
   export = anything;
 }

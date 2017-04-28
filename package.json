@@ -30,7 +30,8 @@
     "@types/graceful-fs": "^2.0.29",
     "@types/node": "^7.0.0",
     "graceful-fs": "^4.1.11",
-    "json2yaml": "^1.1.0"
+    "json2yaml": "^1.1.0",
+    "path-exists": "^3.0.0"
   },
   "devDependencies": {
     "@types/tape": "^4.2.28",
