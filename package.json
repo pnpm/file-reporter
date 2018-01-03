@@ -28,7 +28,7 @@
   "homepage": "https://github.com/pnpm/pnpm-file-reporter#readme",
   "dependencies": {
     "@types/graceful-fs": "^2.0.29",
-    "@types/node": "^8.0.6",
+    "@types/node": "^8.5.4",
     "graceful-fs": "^4.1.11",
     "json2yaml": "^1.1.0",
     "path-exists": "^3.0.0"
