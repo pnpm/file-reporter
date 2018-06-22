@@ -1,3 +1,4 @@
+///<reference path="../typings/index.d.ts"/>
 import test = require('tape')
 import ndjson = require('ndjson')
 import child = require('child_process')
