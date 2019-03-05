@@ -1,7 +1,5 @@
 import fs = require('graceful-fs')
-import YAML = require('json2yaml')
 
-const slice = Array.prototype.slice
 const LOG_FILENAME = 'pnpm-debug.log'
 
 export default function (streamParser: Object) {
@@ -23,8 +21,8 @@ export default function (streamParser: Object) {
     }
 
     const prettyLogs = getPrettyLogs()
-    const yamlLogs = YAML.stringify(prettyLogs)
-    fs.writeFileSync(LOG_FILENAME, yamlLogs, 'UTF8')
+    const jsonLogs = JSON.stringify(prettyLogs, null, 2)
+    fs.writeFileSync(LOG_FILENAME, jsonLogs, 'UTF8')
   })
 
   function getPrettyLogs () {
