@@ -1,5 +1,5 @@
 {
-  "name": "pnpm-file-reporter",
+  "name": "@pnpm/file-reporter",
   "version": "0.1.0",
   "description": "A file reporter for pnpm",
   "main": "lib/index.js",
@@ -15,7 +15,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/pnpm/pnpm-file-reporter.git"
+    "url": "git+https://github.com/pnpm/file-reporter.git"
   },
   "keywords": [
     "pnpm-reporter"
@@ -26,9 +26,9 @@
   "author": "Zoltan Kochan <z@kochan.io> (https://www.kochan.io/)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/pnpm/pnpm-file-reporter/issues"
+    "url": "https://github.com/pnpm/file-reporter/issues"
   },
-  "homepage": "https://github.com/pnpm/pnpm-file-reporter#readme",
+  "homepage": "https://github.com/pnpm/file-reporter#readme",
   "dependencies": {
     "@types/graceful-fs": "^4.1.2",
     "@types/node": "^9.4.6",
