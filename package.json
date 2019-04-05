@@ -33,7 +33,7 @@
     "@types/graceful-fs": "^4.1.2",
     "@types/node": "^9.4.6",
     "graceful-fs": "^4.1.11",
-    "path-exists": "^3.0.0"
+    "path-exists": "^4.0.0"
   },
   "devDependencies": {
     "@types/tape": "^4.2.28",
