@@ -8,4 +8,4 @@ before_install:
 install:
   - pnpm install
 script:
-  - npm test
+  - pnpm test

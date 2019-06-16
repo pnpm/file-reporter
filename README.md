@@ -7,7 +7,7 @@
 ## Installation
 
 ```
-npm i @pnpm/file-reporter
+<pnpm|yarn|npm> add @pnpm/file-reporter
 ```
 
 ## License
