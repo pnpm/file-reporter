@@ -11,7 +11,7 @@
     "pretest": "pnpm run tsc",
     "test": "tslint -c tslint.json --project . && ts-node test",
     "tsc": "rimraf lib && tsc",
-    "prepublish": "pnpm run tsc"
+    "prepublishOnly": "pnpm run tsc"
   },
   "repository": {
     "type": "git",
