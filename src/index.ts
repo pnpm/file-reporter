@@ -1,6 +1,7 @@
 import fs = require('graceful-fs')
+import path = require('path')
 
-const LOG_FILENAME = 'pnpm-debug.log'
+const LOG_FILENAME = 'node_modules/.pnpm-debug.log'
 
 export default function (streamParser: Object) {
   const logs: Object[] = []
@@ -22,6 +23,7 @@ export default function (streamParser: Object) {
 
     const prettyLogs = getPrettyLogs()
     const jsonLogs = JSON.stringify(prettyLogs, null, 2)
+    fs.mkdirSync(path.dirname(LOG_FILENAME), { recursive: true })
     fs.writeFileSync(LOG_FILENAME, jsonLogs, 'UTF8')
   })
 
