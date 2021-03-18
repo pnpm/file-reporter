@@ -24,7 +24,9 @@ export default function (streamParser: Object) {
     const prettyLogs = getPrettyLogs()
     const jsonLogs = JSON.stringify(prettyLogs, null, 2)
     // Don't create a node_modules directory if it does not exist
-    const dest = fs.existsSync(path.dirname(LOG_FILENAME)) ? LOG_FILENAME : '.pnpm-debug.log'
+    const dest = fs.existsSync(path.dirname(LOG_FILENAME))
+      ? LOG_FILENAME
+      : path.basename(LOG_FILENAME)
     fs.writeFileSync(dest, jsonLogs, 'UTF8')
   })
 
