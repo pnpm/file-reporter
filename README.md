@@ -1,3 +1,5 @@
+> This package was moved to the pnpm monorepo: https://github.com/pnpm/pnpm/tree/main/packages/file-reporter
+
 # @pnpm/file-reporter
 
 > A file reporter for pnpm
